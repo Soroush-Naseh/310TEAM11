@@ -1,0 +1,112 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  2500
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "Open Boundary"
+    <BdryType> = 1
+    <Vs> = 0
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 5
+  <BeginBlock>
+    <BlockName> = "Air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Water"
+    <ex> = 80
+    <ey> = 80
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "PVC"
+    <ex> = 6.7999999999999998
+    <ey> = 6.7999999999999998
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Wire"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Silicon"
+    <ex> = 2.5
+    <ey> = 2.5
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "Wire Right"
+    <Vc> = 2
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Wire Left"
+    <Vc> = -2
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 18
+-7.5	0	0	0	0
+-6.5	0	0	0	0
+7.5	0	0	0	0
+6.5	0	0	0	0
+-5.5	0	0	0	0
+-8.5	0	0	0	0
+5.5	0	0	0	0
+8.5	0	0	0	0
+-5.5857864376269051	0.5	0	0	0
+5.5857864376269051	0.5	0	0	0
+-5.5857864376269051	-0.5	0	0	0
+5.5857864376269051	-0.5	0	0	0
+-50	-2	0	0	0
+50	-2	0	0	0
+80	0	0	0	0
+-80	0	0	0	0
+-61.5	51.200000000000003	0	0	0
+15.699999999999999	129.19999999999999	0	0	0
+[NumSegments] = 2
+8	9	-1	0	0	0	0
+10	11	-1	0	0	0	0
+[NumArcSegments] = 17
+1	0	180	1	0	0	0	2	1
+0	1	180	1	0	0	0	2	1
+2	3	180	1	0	0	0	1	1
+3	2	180	1	0	0	0	1	1
+4	8	19.471220634490695	1	0	0	0	0	1
+5	10	160.52877936550931	1	0	0	0	0	1
+7	9	160.52877936550931	1	0	0	0	0	1
+6	11	19.471220634490695	1	0	0	0	0	1
+8	5	160.52877936550931	1	0	0	0	0	1
+9	6	19.471220634490692	1	0	0	0	0	1
+10	4	19.471220634490692	1	0	0	0	0	1
+11	7	160.52877936550931	1	0	0	0	0	1
+13	12	180	1	0	0	0	0	1
+15	14	180	1	1	0	0	0	1
+14	16	140.22193087978891	1	1	0	0	0	1
+16	15	39.778069120211072	1	1	0	0	0	1
+12	13	180	1	0	0	0	0	1
+[NumHoles] = 0
+[NumBlockLabels] = 7
+-0.13	0.01	3	-1	0	0
+-7.0300000000000002	-0.95999999999999996	3	-1	0	0
+7.0300000000000002	-0.93999999999999995	3	-1	0	0
+0.29999999999999999	22.300000000000001	2	-1	0	0
+-57.600000000000001	31.600000000000001	1	-1	0	0
+-7.0300000000000002	-0.01	4	-1	0	0
+7	0.029999999999999999	4	-1	0	0
