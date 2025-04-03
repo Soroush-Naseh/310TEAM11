@@ -1,0 +1,28 @@
+* C:\Users\llag396\OneDrive - The University of Auckland\Documents\GitHub\310TEAM11\Lanna\alternative_rx.asc
+I1 N004 N003 PULSE(0 100n 1n 0 0 2u 10u)
+D1 N003 N004 D
+C1 N003 N004 4p
+R1 N003 N004 10Meg
+V1 N004 0 5V
+R2 N003 0 100k
+XU1 N003 N001 5V 0 Vsns1 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+R3 Vsns1 N001 90k
+R4 N001 0 10k
+C2 Vfilter Vsns1 100µF
+R5 Vfilter 2.5V 10k
+XU2 Vfilter N002 NC_01 NC_02 Vo level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V2 2.5V 0 2.5V
+R6 N002 2.5V 10k
+R7 Vo N002 90k
+.model D D
+.lib C:\Users\llag396\AppData\Local\LTspice\lib\cmp\standard.dio
+* Load Resistor
+.tran 0 1m 0 10u
+* Model of Photodiode
+* Reverse Bias
+* Gain: about 10x\nWe might have to change this
+* High Pass Filter\n(WIP)
+* We can offset by changing GND\nto 2.5V here
+.lib UniversalOpAmp1.lib
+.backanno
+.end
