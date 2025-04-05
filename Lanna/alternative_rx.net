@@ -1,4 +1,4 @@
-* C:\Users\llag396\OneDrive - The University of Auckland\Documents\GitHub\310TEAM11\Lanna\alternative_rx.asc
+* C:\Users\lagas\310TEAM11\Lanna\alternative_rx.asc
 I1 N004 N003 PULSE(0 100n 1n 0 0 2u 10u)
 D1 N003 N004 D
 C1 N003 N004 4p
@@ -10,12 +10,13 @@ R3 Vsns1 N001 90k
 R4 N001 0 10k
 C2 Vfilter Vsns1 100µF
 R5 Vfilter 2.5V 10k
-XU2 Vfilter N002 NC_01 NC_02 Vo level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+XU2 Vfilter N002 5V 0 Vo level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 V2 2.5V 0 2.5V
 R6 N002 2.5V 10k
 R7 Vo N002 90k
+V3 5V 0 5V
 .model D D
-.lib C:\Users\llag396\AppData\Local\LTspice\lib\cmp\standard.dio
+.lib C:\Users\lagas\AppData\Local\LTspice\lib\cmp\standard.dio
 * Load Resistor
 .tran 0 1m 0 10u
 * Model of Photodiode
