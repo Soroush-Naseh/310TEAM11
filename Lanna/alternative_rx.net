@@ -1,5 +1,5 @@
-* C:\Users\lagas\310TEAM11\Lanna\alternative_rx.asc
-I1 N005 N003 PULSE(0 100n 1n 0 2u 2u 10u)
+* C:\Users\llag396\Downloads\310TEAM11\Lanna\alternative_rx.asc
+I1 N005 N003 PULSE(0 100n 1n 0 0 20u 0.1m)
 D1 N003 N005 D
 C1 N003 N005 4p
 R1 N003 N005 10Meg
@@ -8,7 +8,7 @@ R2 N003 0 100k
 XU1 N003 N001 5V 0 Vsns1 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 R3 Vsns1 N001 90k
 R4 N001 0 10k
-C2 Vfilter Vsns1 100n
+C2 Vfilter Vsns1 530n
 R5 Vfilter 2V5 10k
 XU2 Vfilter N006 5V 0 Vsns2 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 R6 N006 2V5 10k
@@ -30,9 +30,9 @@ C7 N002 Vsns2 3n
 R13 5V Vt 5k
 C8 Vt 0 2.7n
 .model D D
-.lib C:\Users\lagas\AppData\Local\LTspice\lib\cmp\standard.dio
+.lib C:\Users\llag396\AppData\Local\LTspice\lib\cmp\standard.dio
 * Load Resistor
-.tran 0 1m 0 10u
+.tran 0 1m 0 10n
 * Model of Photodiode
 * Reverse Bias
 * Gain: about 10x\nWe might have to change this
