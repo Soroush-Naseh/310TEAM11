@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\llag396\Downloads\310TEAM11\Lanna\alternative_rx.asc
-Start Time: Mon Apr  7 13:35:18 2025
+Start Time: Wed Apr  9 13:57:29 2025
 solver = Normal
 Maximum thread count: 24
 tnom = 27
@@ -9,5 +9,5 @@ method = modified trap
 Limiting rise time of source i1 to 2e-06
 Limiting fall time of source i1 to 2e-06
 Direct Newton iteration for .op point succeeded.
-Total elapsed time: 1.082 seconds.
+Total elapsed time: 9.366 seconds.
 
