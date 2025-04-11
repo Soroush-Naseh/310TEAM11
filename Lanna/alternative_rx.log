@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\lagas\310TEAM11\Lanna\alternative_rx.asc
-Start Time: Fri Apr 11 13:31:55 2025
+Start Time: Fri Apr 11 14:00:03 2025
 solver = Normal
 Maximum thread count: 16
 tnom = 27
@@ -29,5 +29,5 @@ Gmin = 5.50104
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 2.038 seconds.
+Total elapsed time: 4.860 seconds.
 
