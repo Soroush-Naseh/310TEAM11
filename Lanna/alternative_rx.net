@@ -1,0 +1,60 @@
+* C:\Users\lagas\310TEAM11\Lanna\alternative_rx.asc
+I1 N009 N007 PULSE(0 100n 1n 0 0 20u 0.1m)
+D1 N007 N009 D
+C1 N007 N009 4p
+R1 N007 N009 10Meg
+V1 N009 0 5V
+R2 N007 0 100k
+R3 N004 N003 90k
+R4 N003 0 10k
+C2 N006 N004 530n
+R5 N006 2V5 1k
+R6 N002 2V5 100
+R7 Vsns2 N002 20k
+V3 5V 0 5V
+R8 5V N016 10Meg
+R9 N016 0 10Meg
+C3 N016 0 4p
+C4 N014 N012 100n
+R10 2V5 N014 50
+R11 2V5 N012 10k
+C5 2V5 0 1µ
+XU4 0 N005 PWM 5V N008 Vt Vt 5V NE555
+C6 N008 0 100n
+D2 N005 5V BAT54
+R12 5V N005 1k
+C7 N005 Vtest 3n
+R13 5V Vt 5k
+C8 Vt 0 2.7n
+R14 N011 N010 3.6k
+R15 N013 N010 15k
+R16 N010 PWM 3.6k
+C9 N010 0 68n
+R17 N015 0 3.6k
+R18 N015 5V 3.6k
+C10 5V 0 68n
+C11 N011 N013 6.8n
+C12 Vpulse 0 530n
+R19 Vpulse N011 10k
+C13 Vsns2 N002 3n
+R20 N001 Vsns2 100
+R21 Vtest N001 10k
+XU1 N007 N003 5V 0 N004 TL082
+XU2 N006 N002 5V 0 Vsns2 TL082
+XU9 N016 N012 5V 0 N014 TL082
+XU5 N015 N013 5V 0 N011 TL082
+XU3 N001 2V5 5V 0 Vtest TL082
+.model D D
+.lib C:\Users\lagas\AppData\Local\LTspice\lib\cmp\standard.dio
+* Load Resistor
+.tran 0 10m 0 250n
+* Model of Photodiode
+* Reverse Bias
+* High Pass Filter\n(WIP)
+* We can offset by changing GND\nto 2.5V here
+* Pulse Wave Generator\n(PWM)
+* 2.5 Offset Generator
+.lib TL082.301
+.lib NE555.sub
+.backanno
+.end
